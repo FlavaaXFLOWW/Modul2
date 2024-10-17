@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4e6cd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .form-container {
+        background-color: #396854;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+      }
+      h2 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+      label {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      textarea {
+        resize: vertical;
+        height: 80px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Form Pendaftaran</h2>
+      <form id="formPendaftaran">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Nama" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required />
+
+        <label for="alamat">Alamat Lengkap</label>
+        <textarea id="alamat" placeholder="Alamat Lengkap" required></textarea>
+
+        <button type="button" onclick="validateForm()">Daftar</button>
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+        let nama = document.getElementById("nama").value;
+        let email = document.getElementById("email").value;
+        let alamat = document.getElementById("alamat").value;
+
+        if (!nama || !email || !alamat) {
+          alert("Semua data harus diisi.");
+        } else {
+          alert("Formulir berhasil dikirim!");
+        }
+      }
+    </script>
+  </body>
+</html>
