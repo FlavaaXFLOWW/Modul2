@@ -1,4 +1,4 @@
-#Nama : M. Adrian Maulana
-#NIM : 202210370311409
-Modul 1 : 
-Modul 2 :
+# Nama : M. Adrian Maulana
+# NIM : 202210370311409
+# Modul 1 : https://github.com/FlavaaXFLOWW/Prak.PemWEB/tree/Modul1
+# Modul 2 :
