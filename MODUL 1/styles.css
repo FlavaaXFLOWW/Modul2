@@ -1,0 +1,320 @@
+/* Style untuk tabel */
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: rgb(254, 254, 254);
+  padding: 10px;
+}
+
+td {
+  padding: 15px;
+}
+
+tr:nth-child(1) td {
+  background-color: cyan;
+}
+
+tr:nth-child(2) td {
+  background-color: black;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hot-news {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0000; /* Warna merah yang mencolok */
+  background-color: yellow; /* Warna latar belakang kuning */
+  text-align: center;
+  padding: 5px 10px; /* Sesuaikan padding agar kotak kuning tidak terlalu panjang */
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+  display: inline-block; /* Membuat kotak kuning mengikuti ukuran teks saja */
+  animation: pulse 1.5s infinite;
+}
+
+/* Efek animasi sederhana */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: right;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between; /* Buat jarak seimbang di antara tombol */
+  align-items: center; /* Pusatkan secara vertikal */
+  list-style: none;
+  width: 100%; /* Buat menu selebar layar */
+  padding: 0 50px; /* Beri padding kiri dan kanan */
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 20px; /* Jarak antar tombol */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-size: 18px; /* Ukuran font */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e6faff;
+  padding: 0px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.label {
+  background-color: #fff6cc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.image-content img {
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.categories {
+  padding: 50px;
+  background-color: #f7faff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.justified-text {
+  text-align: justify;
+}
+.view-all-categories {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: white;
+  padding: 5px 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.view-all-categories:hover {
+  background: linear-gradient(90deg, #ff9900, #ff6600);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Style untuk kategori resep */
+.category-item {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  padding: 15px; /* Tambahkan padding untuk efek tombol */
+  border-radius: 10px;
+  color: white; /* Ubah warna teks sesuai kebutuhan */
+  border: none; /* Hapus border default tombol */
+  cursor: pointer; /* Ubah kursor saat hover */
+  background-color: transparent; /* Menghilangkan latar belakang default */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efek transisi saat hover */
+}
+
+.category-item:hover {
+  background: linear-gradient(
+    90deg,
+    #ff9900,
+    #ff6600
+  ); /* Efek gradien sama seperti "View All Categories" */
+  transform: scale(1.05); /* Efek perbesaran */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Efek bayangan saat hover */
+}
+
+.view-all-categories {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: white;
+  padding: 5px 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.view-all-categories:hover {
+  background: linear-gradient(90deg, #ff9900, #ff6600);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Tambahkan warna latar belakang untuk kategori */
+.breakfast {
+  background-color: #ffcc0065;
+}
+
+.vegan {
+  background-color: #66cc665f;
+}
+
+.meat {
+  background-color: #cc333365;
+}
+
+.dessert {
+  background-color: #ff669965;
+}
+
+.lunch {
+  background-color: #66a3ff65;
+}
+
+.chocolate {
+  background-color: #66330065;
+}
+
+.category-item {
+  width: 150px; /* Atur lebar sama untuk semua kategori */
+  height: 150px; /* Atur tinggi sama untuk semua kategori */
+  display: flex;
+  flex-direction: column; /* Agar gambar dan teks terletak di atas satu sama lain */
+  align-items: center; /* Menyelaraskan konten di tengah */
+  justify-content: center; /* Menyelaraskan konten secara vertikal */
+  margin: 10px; /* Jarak antar kategori */
+}
+
+.category-title {
+  font-family: "Inter", sans-serif; /* Ganti font */
+  font-weight: bold; /* Menebalkan teks */
+  color: rgb(255, 255, 255); /* Ubah warna teks sesuai kebutuhan */
+  font-size: 18px; /* Ubah ukuran font sesuai keinginan */
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #000000;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+tr:nth-child(3) td {
+  background-color: pink;
+}
+
+/* Style tambahan */
+h1 {
+  text-align: center;
+  font-size: 64px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+footer {
+  background-color: #f7faff; /* Warna latar belakang footer */
+  padding: 20px; /* Ruang di dalam footer */
+  text-align: center; /* Teks di tengah */
+}
+
+.footer-content {
+  max-width: 800px; /* Lebar maksimum */
+  margin: auto; /* Pusatkan footer */
+}
+
+.footer-links {
+  margin-top: 10px; /* Jarak antara teks dan tautan */
+}
+
+.footer-links a {
+  margin: 0 15px; /* Jarak antar tautan */
+  text-decoration: none; /* Hapus garis bawah */
+  color: #333; /* Warna teks tautan */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
