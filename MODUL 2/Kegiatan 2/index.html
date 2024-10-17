@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penjumlahan</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+      }
+      button#hitungBtn {
+        background-color: #4caf50;
+      }
+      button#resetBtn {
+        background-color: #9e9e9e;
+      }
+      p#hasil {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Penjumlahan</h2>
+      <label for="angka1">Bilangan pertama</label>
+      <input
+        type="number"
+        id="angka1"
+        placeholder="Masukkan bilangan pertama"
+        required
+      />
+
+      <label for="angka2">Bilangan kedua</label>
+      <input
+        type="number"
+        id="angka2"
+        placeholder="Masukkan bilangan kedua"
+        required
+      />
+
+      <button id="hitungBtn" onclick="hitungPenjumlahan()">Jumlahkan</button>
+      <button id="resetBtn" onclick="resetForm()">Reset</button>
+
+      <p>Hasil: <span id="hasil">0</span></p>
+    </div>
+
+    <script>
+      function hitungPenjumlahan() {
+        let angka1 = parseFloat(document.getElementById("angka1").value);
+        let angka2 = parseFloat(document.getElementById("angka2").value);
+        let hasil = angka1 + angka2;
+        document.getElementById("hasil").textContent = hasil;
+      }
+
+      function resetForm() {
+        document.getElementById("angka1").value = "";
+        document.getElementById("angka2").value = "";
+        document.getElementById("hasil").textContent = "0";
+      }
+    </script>
+  </body>
+</html>
