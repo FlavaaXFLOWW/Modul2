@@ -4,4 +4,5 @@
 # Modul 2 : https://github.com/FlavaaXFLOWW/Prak.PemWEB/tree/Modul2/MODUL%202
 # Modul 3 : https://github.com/FlavaaXFLOWW/Prak.PemWEB/tree/Modul3/modul3_php
 # Modul 4 : 
-# Modul 5 : https://github.com/FlavaaXFLOWW/Prak.PemWEB.git
+# Modul 5 : https://github.com/FlavaaXFLOWW/Prak.PemWEB/blob/Modul5/Modul5Laravel%20(2).zip
+
